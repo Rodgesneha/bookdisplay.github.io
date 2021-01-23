@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Display</title>
+    <style>
+        .container{
+            padding: 5%;
+            width: 50%;
+            margin: 0 auto;
+        }
+        input{
+            margin: 10px;
+            display: block;
+            width: 80%;
+        }
+        td{
+            width: 150px;
+            padding: 5px;
+        }
+        th{
+            width: 150px;
+            padding: 5px;
+            text-align: left;
+        }
+        .success{
+            width: 80%;
+            color: white;
+            background-color: green;
+            padding: 3px;
+        }
+        .error{
+            width: 80%;
+            color: white;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Book Store</h1>
+        <h3 id="heading">Add Book</h3>
+        <form id='inputForm'>
+            <div>
+                <label for="name">Name :</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div>
+                <label for="auther">Auther :</label>
+                <input type="text" name="auther" id="auther">
+            </div>
+            <div>
+                <label for="isbn">Isbn :</label>
+                <input type="text" name="isbn" id="isbn">
+            </div>
+            <div>
+                <input type="submit" value="Add" id="addBook">
+            </div>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Auther</th>
+                    <th>Isbn</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="table">
+                
+            </tbody>
+        </table>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
